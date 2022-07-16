@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=radio],
+    select {
+        margin: 12px 4px;
+    }
+
+    input[type=checkbox],
+    select {
+        margin: 12px 4px;
+    }
+
+    input[type=email],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=password],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    div {
+        width: 50%;
+        text-align: left;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        margin: 12px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+    }
+</style>
+
+<body>
+    <center>
+        <h3>Enter your details hear</h3>
+
+        <div>
+            <form action="/data" method="POST">
+                <!-- <label for="fname">First Name</label> -->
+                <input type="text" id="fname" name="firstname" placeholder="First name">
+
+                <!-- <label for="lname">Last Name</label> -->
+                <input type="text" id="lname" name="lastname" placeholder="Last name">
+
+                <!-- <label for="gender">Gender</label><br> -->
+                <label>
+                    <input value="Male" type="radio" name="gender" checked> Male</label>&nbsp;&nbsp;&nbsp;
+                <label>
+                    <input value="Female" type="radio" name="gender"> Female</label><br>
+
+                <!-- <label for="uname">User Name</label> -->
+                <input type="email" id="uname" name="username" placeholder="User name">
+
+                <!-- <label for="password">Password</label> -->
+                <input type="password" id="password" name="password" placeholder="Password">
+
+                <!-- <label for="Hobbies">Hobbies</label><br><br> -->
+                <input type="checkbox" id="hobbi1" name="hobbies" value="Cricket">
+                <label for="hobbi1"> Cricket</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="hobbi2" name="hobbies" value="Football">
+                <label for="hobbi2"> Football</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="hobbi3" name="hobbies" value="Reading book">
+                <label for="hobbi3"> Reading book</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="hobbi4" name="hobbies" value="Travelling">
+                <label for="hobbi4"> Travelling</label>
+
+                <!-- <label for="country">Country</label> -->
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <!-- <label for="address">Address</label> -->
+                <textarea rows="4" cols="40" name="address" placeholder="Adddress"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </center>
+</body>
+
+</html>

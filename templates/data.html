@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<body>
+    <center>
+        <table>
+            {% for key, value in result.items() %}
+            <tr>
+                <th> {{key}} </th>
+                {% if key == "hobbies" %}
+                <td>{% for i in hobbies %}
+                    {{i}}
+                    {% if i == hobbies|last %}
+                    {%else%}
+                    -
+                    {% endif %}
+                    {% endfor %}
+                </td>
+                {%else%}
+                <td> {{ value }} </td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+
+</html>
